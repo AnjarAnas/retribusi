@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Tipe extends Model
+{
+    protected $guarded = [];
+
+    public function objek()
+    {
+        return $this->hasMany(Objek::class);
+    }
+}
