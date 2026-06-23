@@ -7,7 +7,7 @@
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/$1" },
         { "src": "/assets/(css|js|images|favicon.ico)/(.*)", "dest": "/public/$1/$2/$3" },
-        { "src": "/api/(.*)", "dest": "/api/index.php/$1" },
+        { "src": "/api/(.*)", "dest": "/vercel-api/index.php" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "buildCommand": "vite build",
