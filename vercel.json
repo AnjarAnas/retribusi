@@ -31,6 +31,9 @@
         "DB_PORT": "5432",
         "DB_DATABASE": "retribusi",
         "DB_USERNAME": "neondb_owner",
-        "DB_PASSWORD":"npg_j0PFUl3QuMBR"
+        "DB_PASSWORD":"npg_j0PFUl3QuMBR",
+        "JWT_SECRET":"LgnwJoQOU8F0desuqvpdLx1xvQd46iJzzpI3gcDfOKYkoWYjocRIzqtxWr77JmeS",
+        "JWT_ALGO":"HS256",
+        "JWT_TTL":1200
     }
 }
