@@ -5,8 +5,8 @@
         "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
     "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/(css|js|images|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
+        { "src": "/assets/(css|js|images|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
         { "src": "/api/(.*)", "dest": "/api/index.php" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
@@ -15,7 +15,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://yourproductionurl.com",
+        "APP_URL": "https://retribusi-jet.vercel.app",
         "APP_KEY": "base64:ze8ttvRJVtvKub5TR+D2NXFEB9koBHqL/llU2AnNKtc=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
